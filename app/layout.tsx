@@ -11,21 +11,9 @@ export const metadata: Metadata = {
   description: 'Advanced AI-powered vision system for fabric inspection with real-time analysis and comprehensive quality control.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
+    shortcut: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
+    apple: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
   },
 }
 

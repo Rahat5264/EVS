@@ -10,7 +10,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <section className="hero-shell relative isolate min-h-screen overflow-hidden bg-black text-white">
+    <section className="hero-shell relative min-h-screen overflow-hidden bg-black text-white">
 
       {/* VIDEO */}
       <video
@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-[1220px] flex-col px-6 pt-7 pb-12 sm:px-10 lg:px-12">
 
         {/* ================= HEADER ================= */}
-        <header className="fixed left-0 top-0 z-30 w-full">
+        <header className="fixed left-0 top-0 z-[100] w-full">
           <div className="mx-auto flex max-w-[1220px] items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
 
             {/* LOGO */}

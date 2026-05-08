@@ -94,7 +94,7 @@ export default function AboutUsPage() {
       <section className="w-full bg-[#303a4a]">
         <div className="relative h-[280px] w-full overflow-hidden md:h-[360px] lg:h-[450px]">
           <Image
-            src="/hero-camera.jpg"
+            src="https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb7c782b53fed66d42be47_About-us-main-image.png"
             alt="EVS office and connected inspection systems"
             fill
             className="object-cover"
@@ -138,7 +138,7 @@ export default function AboutUsPage() {
         <div className="mx-auto grid max-w-[1120px] overflow-hidden rounded-[4px] bg-[#1d232b] lg:grid-cols-[0.95fr_1.05fr]">
           <div className="relative min-h-[360px] bg-[#4b4a9a] md:min-h-[430px]">
             <Image
-              src="/industries-grid.jpg"
+              src="https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69c51aed57768b960652f433_CTA-image.jpg"
               alt="EVS AI inspection approach"
               fill
               className="object-cover"

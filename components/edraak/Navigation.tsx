@@ -29,22 +29,28 @@ export default function Navigation() {
                 Industries ▾
               </a>
 
-              <div className="absolute left-0 top-full w-[250px] pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                <div className="rounded-lg border border-white/10 bg-slate-800/95 p-2">
-                  <ul className="flex flex-col gap-2 text-[15px]">
-                    {['Textile & Apparel', 'Pharma', 'Agriculture', 'FMCGs', 'Food'].map((item) => (
-                      <li key={item}>
-                        <a
-                          href="#"
-                          className="block rounded-md px-4 py-3 hover:bg-slate-700/70 hover:text-blue-300"
-                        >
-                          {item}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="absolute left-0 top-full w-[250px] pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                  <div className="rounded-lg border border-white/10 bg-slate-800/95 p-2">
+                    <ul className="flex flex-col gap-2 text-[15px]">
+                      {[
+                        { label: 'Textiles & Apparel', href: '/industries/textiles-and-apparel' },
+                        { label: 'Pharma', href: '/industries/pharma' },
+                        { label: 'Agriculture', href: '/industries/agriculture' },
+                        { label: 'FMCGs', href: '/industries/fmcgs' },
+                        { label: 'Food', href: '/industries/food' },
+                      ].map((item) => (
+                        <li key={item.label}>
+                          <Link
+                            href={item.href}
+                            className="block rounded-md px-4 py-3 hover:bg-slate-700/70 hover:text-blue-300"
+                          >
+                            {item.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
             </li>
 
             <li>
@@ -101,10 +107,21 @@ export default function Navigation() {
                 </button>
                 {industriesOpen && (
                   <div className="ml-4 space-y-1 rounded bg-[#3a4556]/50 p-3">
-                    {['Textile & Apparel', 'Pharma', 'Agriculture', 'FMCGs', 'Food'].map((item) => (
-                      <a key={item} href="#" className="block py-2 text-white/80 hover:text-blue-300 transition">
-                        {item}
-                      </a>
+                    {[
+                      { label: 'Textiles & Apparel', href: '/industries/textiles-and-apparel' },
+                      { label: 'Pharma', href: '/industries/pharma' },
+                      { label: 'Agriculture', href: '/industries/agriculture' },
+                      { label: 'FMCGs', href: '/industries/fmcgs' },
+                      { label: 'Food', href: '/industries/food' },
+                    ].map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="block py-2 text-white/80 hover:text-blue-300 transition"
+                      >
+                        {item.label}
+                      </Link>
                     ))}
                   </div>
                 )}

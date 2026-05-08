@@ -1,5 +1,13 @@
+import Link from 'next/link'
+
 export default function Industries() {
-  const categories = ['Textiles & Apparel', 'Pharmaceutical', 'Agriculture', 'FMCGs', 'Food']
+  const categories = [
+    { label: 'Textiles & Apparel', href: '/industries/textiles-and-apparel' },
+    { label: 'Pharmaceutical', href: '/industries/pharma' },
+    { label: 'Agriculture', href: '/industries/agriculture' },
+    { label: 'FMCGs', href: '/industries/fmcgs' },
+    { label: 'Food', href: '/industries/food' },
+  ]
 
   return (
     <section className="bg-[#303a4a] px-6 py-14 md:py-20">
@@ -12,16 +20,16 @@ export default function Industries() {
 
         <div className="border-t border-white/10">
           {categories.map((category) => (
-            <a
-              key={category}
-              href="#"
+            <Link
+              key={category.label}
+              href={category.href}
               className="group flex w-full items-center justify-between border-b border-white/10 py-4 text-left transition-colors duration-200 hover:border-white/25"
             >
               <span className="text-[22px] text-white/92 transition-colors duration-200 group-hover:text-[#7da7ff] md:text-[30px]">
-                {category}
+                {category.label}
               </span>
               <span className="text-white/60 transition-colors duration-200 group-hover:text-[#7da7ff]">↗</span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -40,7 +40,7 @@ export default function ProcessPage() {
             <div className="flex items-center justify-center">
               <div className="relative h-[400px] w-full md:h-[480px] lg:h-[520px]">
                 <Image
-                  src="https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb79297f7252660280f348_Case-Study-home-page.png"
+                  src="https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69d3b8105499afee719ff10d_process-image.png"
                   alt="Process flow diagram"
                   fill
                   className="object-contain"

@@ -7,7 +7,6 @@ import Industries from '@/components/edraak/Industries'
 import CTA from '@/components/edraak/CTA'
 import Testimonial from '@/components/edraak/Testimonial'
 import NewsUpdates from '@/components/edraak/NewsUpdates'
-import Footer from '@/components/edraak/Footer'
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <InspectionFeatures />
       <Testimonial />
       <NewsUpdates />
-      <Footer />
     </main>
   )
 }

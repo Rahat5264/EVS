@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Instrument_Sans, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Navigation from '@/components/edraak/Navigation'
+import Footer from '@/components/edraak/Footer'
 import './globals.css'
 
 const instrumentSans = Instrument_Sans({ subsets: ['latin'], variable: '--font-instrument-sans' })
@@ -25,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${instrumentSans.variable} ${geistMono.variable} bg-white`}>
       <body className="font-sans antialiased">
+        <Navigation />
         {children}
+        <Footer />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

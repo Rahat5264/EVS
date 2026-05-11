@@ -68,7 +68,7 @@ export default function Navigation() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link href="/contact" className="hidden md:inline-block rounded-lg border border-white/10 bg-[#2f3948]/95 px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#24303d]">
+          <Link href="/contact" className="hidden md:inline-block rounded-lg border border-white/10 bg-[#2f3948]/95 px-5 py-2.5 text-sm font-semibold text-white hover:text-blue-400">
             Contact us
           </Link>
 
@@ -160,7 +160,7 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="block w-full rounded-lg bg-blue-500 py-3 text-center font-semibold text-white transition hover:bg-blue-600"
+                className="block w-full rounded-lg bg-blue-500 py-3 text-center font-semibold text-white transition hover:text-blue-300"
               >
                 Contact us
               </Link>

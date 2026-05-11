@@ -13,7 +13,7 @@ export default function Industries() {
     <section className="bg-[#303a4a] px-6 py-14 md:py-20">
       <div className="mx-auto grid max-w-[1120px] grid-cols-1 gap-8 lg:grid-cols-[0.95fr_1.3fr] lg:gap-12">
         <div>
-          <p className="max-w-[14ch] text-[46px] font-semibold leading-[1.04] text-white/95 md:text-[52px]">
+          <p className="max-w-[14ch] text-[36px] font-semibold leading-[1.08] text-white/95">
             Our engineering solutions serve all industries
           </p>
         </div>

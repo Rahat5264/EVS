@@ -193,13 +193,11 @@
 }
 
 .hero-main-video {
-  filter: saturate(1.02) contrast(1.08) brightness(0.5);
+  filter: saturate(1.03) contrast(1.02) brightness(1);
 }
 
 .hero-overlay {
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.72) 34%, rgba(0, 0, 0, 0.48) 68%, rgba(0, 0, 0, 0.82) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.76) 100%);
+  background: transparent;
   z-index: 4;
 }
 
@@ -209,7 +207,7 @@
 
 @media (max-width: 1023px) {
   .hero-main-video {
-    filter: saturate(1.02) contrast(1.06) brightness(0.42);
+    filter: saturate(1.03) contrast(1.02) brightness(1);
   }
 }
 

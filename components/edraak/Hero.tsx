@@ -1,25 +1,47 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const HERO_STOCK_VIDEO_URL =
-  'https://assets.mixkit.co/videos/preview/mixkit-close-up-shot-of-a-machine-in-a-production-line-4558-large.mp4'
+  'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/0_Technology_Futuristic_3840x2160.mov'
+
+const TRANSPARENT_POSTER =
+  'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHZpZXdCb3g9IjAgMCAxIDEiLz4='
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const videoElement = videoRef.current
+
+    if (!videoElement) return
+
+    const playback = videoElement.play()
+    if (playback) {
+      playback.catch(() => {})
+    }
+  }, [])
+
   return (
-    <section className="hero-shell relative min-h-screen overflow-hidden bg-black text-white">
+    <section className="hero-shell relative min-h-screen overflow-hidden bg-transparent text-white">
 
       {/* VIDEO */}
       <video
+        ref={videoRef}
         className="hero-main-video absolute inset-0 h-full w-full object-cover"
         autoPlay
         muted
         loop
         playsInline
         preload="auto"
-        poster="/hero-camera.jpg"
+        poster={TRANSPARENT_POSTER}
+        style={{ backgroundColor: 'transparent' }}
+        controls={false}
+        disablePictureInPicture
       >
-        <source src={HERO_STOCK_VIDEO_URL} type="video/mp4" />
+        <source src={HERO_STOCK_VIDEO_URL} />
       </video>
 
       {/* OVERLAY */}
@@ -42,12 +64,15 @@ export default function Hero() {
               Industrial Solutions
             </h1>
 
-            <button className="mt-8 rounded-md bg-[#3b82f6] px-6 py-3 text-[16px] font-medium hover:bg-[#2f70da]">
+            <Link
+              href="/contact"
+              className="mt-8 inline-flex rounded-md bg-[#3b82f6] px-6 py-3 text-[16px] font-medium hover:bg-[#2f70da]"
+            >
               Request a Demo
-            </button>
+            </Link>
           </div>
 
-          <aside className="w-full max-w-[430px] justify-self-start rounded-2xl border border-white/10 bg-slate-900/65 p-4 backdrop-blur-sm lg:justify-self-end">
+          <aside className="w-full max-w-[430px] justify-self-start rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-sm lg:justify-self-end">
 
             <div className="relative h-[220px] w-full overflow-hidden rounded-xl">
               <Image

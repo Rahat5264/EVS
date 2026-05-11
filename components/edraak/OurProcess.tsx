@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 const processSteps = [
@@ -43,12 +44,12 @@ export default function OurProcess() {
             <h2 className="text-[36px] font-medium text-white">From Capture to Quality</h2>
           </div>
 
-          <button
-            type="button"
-            className="h-9 w-full rounded bg-[#4a93ef] px-6 text-xs font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
+          <Link
+            href="/process"
+            className="inline-flex h-9 w-full items-center justify-center rounded bg-[#4a93ef] px-6 text-xs font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
           >
             View all Process
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

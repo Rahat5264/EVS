@@ -10,15 +10,20 @@ export default function FoodPage() {
   return (
     <main className="bg-[#0f1416] text-white">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-black">
-        <div className="absolute inset-0">
-          <Image
-            src="https://db.edraaksystems.com/wp-content/uploads/2026/05/69cb6ad06a94d0b9cd9bf5e7_Success-Story-image-Home-page-p-2000.jpeg"
-            alt="Food inspection"
-            fill
-            className="object-cover opacity-40"
-          />
-        </div>
+      <section className="relative overflow-hidden bg-transparent">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          style={{ backgroundColor: 'transparent' }}
+        >
+          <source src="https://fqc.edraaksystems.com/wp-content/uploads/2026/05/159021-818026286.mp4" type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 bg-black/35" />
 
         <div className="relative z-10 px-6 py-20 md:py-28">
           <div className="mx-auto max-w-[1120px] text-center">

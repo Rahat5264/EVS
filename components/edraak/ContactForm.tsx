@@ -47,14 +47,14 @@ export default function ContactForm() {
             </p>
 
             {/* Contact Details */}
-            <div className="mt-12 space-y-6">
+              <div className="mt-12 space-y-6">
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="mt-2 text-white/75">+92 0000 000 000</p>
+                <p className="mt-2 text-white/75">+92 321 7973753</p>
               </div>
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="mt-2 text-white/75">info@evssystem</p>
+                <p className="mt-2 text-white/75">mail@edraakvisionsystems</p>
               </div>
               <div>
                 <h3 className="font-semibold">Address</h3>

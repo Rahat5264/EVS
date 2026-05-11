@@ -11,9 +11,9 @@ export default function Footer() {
             <Image
               src="https://db.edraaksystems.com/wp-content/uploads/2026/05/69e769924cfa168d806ceef4_Untitled-design-3-1.png"
               alt="EVS Logo"
-              width={170}
-              height={170}
-              className="h-16 w-auto md:h-20"
+              width={240}
+              height={240}
+              className="h-20 w-auto md:h-24 lg:h-28"
             />
             <p className="mt-10 max-w-[260px] text-[13px] leading-[1.45] text-white/72">
               EVS uses AI vision to deliver accurate inspections across industries. We bring quality and efficiency to every solution.
@@ -53,10 +53,10 @@ export default function Footer() {
 
           <div className="xl:border-l xl:border-white/10 xl:pl-12">
             <a
-              href="mailto:mail@edraaksystems.com"
+              href="mailto:mail@edraakvisionsystems"
               className="block text-[18px] font-medium leading-tight text-white underline decoration-white/70 underline-offset-4 md:text-[22px]"
             >
-              mail@edraaksystems.com
+              mail@edraakvisionsystems
             </a>
             <a
               href="tel:+923217973753"

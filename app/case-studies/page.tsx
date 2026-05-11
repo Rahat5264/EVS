@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ContactFAQ from '@/components/edraak/ContactFAQ'
 
 const caseStudies = [
   {
@@ -54,35 +55,35 @@ const caseStudies = [
 const faqItems = [
   {
     question: 'What is EVS?',
-    answer: 'EVS is an AI-powered vision system designed for industrial quality control and inspection across multiple industries.',
+    answer: 'EVS is an advanced AI-Powered Vision Platform designed for industrial inspection. It serves as the core technology that captures high-resolution images and uses AI to detect defects, ensure quality, and provide traceability in real time.',
   },
   {
     question: 'Who is EVS designed for?',
-    answer: 'EVS is designed for manufacturing companies across textile, pharma, agriculture, food, and other industries requiring precision quality control.',
+    answer: 'EVS is built for system integrators, solution providers, and technology partners. You can integrate our platform into your own solutions, train it for specific use cases, customize it, and then deliver it to your customers under your own brand or system name.',
   },
   {
     question: 'How does the partnership model work?',
-    answer: 'We work as partners with your team, providing customized solutions, training, and ongoing support to ensure success.',
+    answer: 'Partners integrate the EVS Vision Platform into their offerings, train the AI models according to their target industry (for example, fabric defect detection), customize the solution as needed, and sell the complete system to end customers. We support you at every stage — from integration to optimization and scaling.',
   },
   {
     question: 'Can we train and customize EVS for our specific industry?',
-    answer: 'Yes, we provide comprehensive training and customization services tailored to your specific industry and requirements.',
+    answer: 'Yes. Our platform is highly flexible. Partners can train the AI models on their own datasets, customize inspection logic, and tailor the system to meet exact requirements of their customers — whether in textiles, pharmaceuticals, or any other manufacturing sector.',
   },
   {
     question: 'Do you support integration with existing production hardware?',
-    answer: 'Yes, our system is designed to integrate seamlessly with existing production lines and hardware.',
+    answer: 'Absolutely. EVS is designed for easy and seamless integration with industrial cameras, production lines, PLCs, and other automation systems. Our team provides technical support to ensure smooth implementation.',
   },
   {
     question: 'What kind of support do partners receive?',
-    answer: 'Partners receive ongoing technical support, system updates, performance monitoring, and continuous optimization.',
+    answer: 'We offer dedicated technical guidance, training for your team, documentation, and ongoing support throughout the integration, customization, and deployment process so you can successfully deliver solutions to your customers.',
   },
   {
     question: 'How do I start a partnership with EVS?',
-    answer: 'Contact our sales team to discuss your requirements and we will create a tailored partnership proposal.',
+    answer: 'Simply fill out the form below or request a demo. Our team will discuss your requirements, explain the integration process, and guide you on how to incorporate EVS into your solutions.',
   },
   {
     question: 'Is training and ongoing support available?',
-    answer: 'Yes, we provide comprehensive initial training and continuous support throughout your partnership with us.',
+    answer: 'Yes. We provide training, deployment support, and ongoing technical assistance to ensure your team gets the most out of your AI inspection system — from initial setup to long-term performance optimization.',
   },
 ]
 
@@ -168,25 +169,12 @@ export default function CaseStudiesPage() {
             </h2>
           </div>
 
-          {/* FAQ Grid */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            {faqItems.map((item, index) => (
-              <details
-                key={index}
-                className="group rounded-lg border border-white/10 bg-[#2f3948] p-6 transition hover:bg-[#3a4556]"
-              >
-                <summary className="flex cursor-pointer items-center justify-between text-[16px] font-medium text-white">
-                  {item.question}
-                  <span className="ml-4 transition group-open:rotate-180">
-                    ▼
-                  </span>
-                </summary>
-                <p className="mt-4 text-[14px] leading-[1.6] text-white/80">
-                  {item.answer}
-                </p>
-              </details>
-            ))}
-          </div>
+              {/* FAQ Grid */}
+              <div>
+                {/* Reuse ContactFAQ styles and behavior */}
+                {/* Import ContactFAQ as a client component to preserve interaction */}
+                <ContactFAQ faqs={faqItems} />
+              </div>
         </div>
       </section>
     </main>

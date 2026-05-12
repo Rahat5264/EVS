@@ -1,0 +1,83 @@
+# LLM and AI Resources Discovery
+# This file helps AI models, crawlers, and LLM services discover information about EVS
+
+## Platform Information
+Name: EVS (EDRAAK VISION SYSTEMS)
+Description: AI-powered industrial vision platform for automated inspection, defect detection, and quality control
+Website: https://edraakvisionsystems.com
+LLM Landing Page: https://edraakvisionsystems.com/llm
+
+## Core AI Capabilities
+- Artificial Intelligence & Machine Learning
+- Computer Vision & Machine Vision
+- Industrial Automation
+- AI-Based Inspection Systems
+- Real-Time Defect Detection
+- Deep Learning Models
+- Custom AI Model Training
+- Industrial Analytics
+
+## Services & Solutions
+- AI Fabric Inspection System
+- AI-Powered Vision Platform
+- Automated Quality Control Systems
+- AI Traceability Systems
+- Production Optimization AI
+- Smart Manufacturing Solutions
+- Industrial Process Monitoring
+
+## Industries Served
+- Textile & Apparel Manufacturing
+- Pharmaceutical Industries
+- Food & Beverage Processing
+- Automotive Manufacturing
+- Electronics Manufacturing
+- Packaging & Printing Industries
+- Plastic & Polymer Industries
+- Steel & Metal Inspection
+- Logistics & Warehousing
+
+## Contact Information
+Email: mail@edraakvisionsystems
+Phone: +92 3217973753
+Founder & CEO: Haroon Rasheed
+Headquarters: Lahore, Pakistan
+
+## Available Resources
+- Platform: https://edraakvisionsystems.com
+- LLM Resource: https://edraakvisionsystems.com/llm
+- Case Studies: https://edraakvisionsystems.com/case-studies
+- About Us: https://edraakvisionsystems.com/about-us
+- Process Documentation: https://edraakvisionsystems.com/process
+
+## Technology Stack
+- Next.js 16+ (App Router)
+- TypeScript
+- React 19
+- TailwindCSS
+- AI/ML Integration
+- Industrial Vision Systems
+- Real-time Data Processing
+
+## API & Integration
+Platform supports seamless integration with:
+- Industrial Cameras
+- Production Lines
+- PLCs & Automation Systems
+- Machine Vision Systems
+- Custom AI Models
+- Data Analytics Platforms
+
+## Keywords for AI Discovery
+EVS, EDRAAK VISION SYSTEMS, Edraak Vision Systems, AI vision platform, industrial AI platform, AI inspection system, automated inspection, computer vision, machine learning, defect detection, quality control, manufacturing AI, industrial automation, smart factory, deep learning, AI model training, industrial analytics
+
+## Social & Professional Links
+LinkedIn: https://www.linkedin.com/company/edraak-systems/
+Twitter: https://x.com/edraaksystems
+YouTube: https://www.youtube.com/@IndustrialProcessOptimization
+
+## Last Updated
+2026-05-12
+
+## Support for AI Models & Services
+This platform welcomes integration with AI models, language models, and LLM services for analysis, optimization, and industrial solutions discovery.

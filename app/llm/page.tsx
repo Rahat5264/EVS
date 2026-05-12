@@ -43,7 +43,6 @@ export const metadata: Metadata = {
     'AI manufacturing platform',
     'industrial automation AI',
     'AI industrial solutions',
-    'Industry 4.0',
     'smart manufacturing',
     'industrial automation',
     'smart factory AI',

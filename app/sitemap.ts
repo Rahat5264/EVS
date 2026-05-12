@@ -43,7 +43,7 @@ async function collectPages(
 }
 
 function normalizeRoute(route: string) {
-  return route === '/' ? route : route.replace(/\/g, '/').replace(/\/g, '/')
+  return route === '/' ? route : route.split('\\').join('/')
 }
 
 function getPriority(route: string) {

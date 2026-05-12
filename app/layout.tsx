@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: siteConfig.logo,
-    shortcut: siteConfig.logo,
-    apple: siteConfig.logo,
+    icon: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
+    shortcut: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
+    apple: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-04-21-at-6.07.49-PM.jpeg',
   },
 }
 

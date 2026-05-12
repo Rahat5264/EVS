@@ -11,9 +11,9 @@ import StructuredData from '@/components/seo/StructuredData'
 import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
-  title: 'AI Fabric Inspection Systems for Manufacturing',
+  title: 'AI Powered Inspection Systems for Manufacturing',
   description:
-    'AI-powered fabric inspection systems for manufacturing teams that need real-time defect detection, traceability, and quality control.',
+    'EVS (EDRAAK VISION SYSTEMS) is an AI-powered machine vision and automated inspection platform delivering superhuman-speed quality control, defect detection, and smart manufacturing inspection solutions.',
   path: '/',
   image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb6ad06a94d0b9cd9bf5e7_Success-Story-image-Home-page-p-2000.jpeg',
 })
@@ -25,9 +25,9 @@ export default function Home() {
         data={[
           breadcrumbSchema([{ name: 'Home', path: '/' }]),
           serviceSchema({
-            name: 'AI Fabric Inspection System',
+            name: 'AI Powered Inspection System',
             description:
-              'AI-powered fabric inspection for manufacturing teams that need automated defect detection, traceability, and quality control.',
+              'EVS (EDRAAK VISION SYSTEMS) is an AI-powered machine vision and automated inspection platform delivering superhuman-speed quality control, defect detection, and smart manufacturing inspection solutions.',
             path: '/',
             image:
               'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb6ad06a94d0b9cd9bf5e7_Success-Story-image-Home-page-p-2000.jpeg',

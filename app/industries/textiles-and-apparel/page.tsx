@@ -1,14 +1,34 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Textiles & Apparel - EVS | AI Vision for Textile Production',
+export const metadata = createPageMetadata({
+  title: 'Textiles & Apparel | EVS AI Vision for Textile Inspection',
   description:
     'Advanced visual inspection for textile production, ensuring defect-free fabrics, consistent color, and precise measurements for quality-driven manufacturing.',
-}
+  path: '/industries/textiles-and-apparel',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69ca4711747d43b7b5a0d653_Vision-Cameras1.jpg',
+})
 
 export default function TextilesPage() {
   return (
     <main className="bg-[#0f1416] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Textiles & Apparel', path: '/industries/textiles-and-apparel' },
+          ]),
+          serviceSchema({
+            name: 'Textiles & Apparel',
+            description:
+              'Advanced visual inspection for textile production, ensuring defect-free fabrics, consistent color, and precise measurements for quality-driven manufacturing.',
+            path: '/industries/textiles-and-apparel',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69ca4711747d43b7b5a0d653_Vision-Cameras1.jpg',
+            areaServed: 'Textile and apparel manufacturing',
+          }),
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-transparent">
         <video

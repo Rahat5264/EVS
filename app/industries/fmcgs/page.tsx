@@ -1,14 +1,34 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'FMCGs - EVS | AI Vision for Fast-Moving Consumer Goods',
+export const metadata = createPageMetadata({
+  title: 'FMCGs | EVS AI Vision for Consumer Goods Manufacturing',
   description:
-    'Scalable engineering solutions for fast-moving consumer goods manufacturing.',
-}
+    'Scalable engineering solutions for fast-moving consumer goods manufacturing with AI vision, inspection, and automation support.',
+  path: '/industries/fmcgs',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69ce6d7d2267bcce937e3e28_iLKy2.jpg',
+})
 
 export default function FMCGsPage() {
   return (
     <main className="bg-[#0f1416] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'FMCGs', path: '/industries/fmcgs' },
+          ]),
+          serviceSchema({
+            name: 'FMCGs',
+            description:
+              'Scalable engineering solutions for fast-moving consumer goods manufacturing with AI vision, inspection, and automation support.',
+            path: '/industries/fmcgs',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69ce6d7d2267bcce937e3e28_iLKy2.jpg',
+            areaServed: 'Fast-moving consumer goods manufacturing',
+          }),
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-transparent">
         <video

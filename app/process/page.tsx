@@ -1,15 +1,58 @@
 import Image from 'next/image'
 import OurProcess from '@/components/edraak/OurProcess'
 import HowWeWork from '@/components/edraak/HowWeWork'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, howToSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Process - Edraak Systems | AI Vision Inspection Process',
-  description: 'Learn how our AI-powered vision system works: Capture, Label, Train, Deploy, and Action.',
-}
+export const metadata = createPageMetadata({
+  title: 'EVS Process | Capture, Label, Train, Deploy, Action',
+  description:
+    'Learn how our AI-powered vision system works through a clear five-step process: capture, label, train, deploy, and action.',
+  path: '/process',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69d3b8105499afee719ff10d_process-image.png',
+})
+
+const processSteps = [
+  {
+    name: 'Capture',
+    text: 'High-speed cameras capture clear production imagery so every relevant defect can be analyzed reliably.',
+  },
+  {
+    name: 'Label',
+    text: 'Images are annotated with the defect, quality, or traceability labels needed to train the model accurately.',
+  },
+  {
+    name: 'Train',
+    text: 'The AI model is trained on your production data to detect the patterns that matter for your process.',
+  },
+  {
+    name: 'Deploy',
+    text: 'The trained system is integrated into the production line for real-time inspection and monitoring.',
+  },
+  {
+    name: 'Action',
+    text: 'The platform triggers alerts, marking, traceability, or optimization actions based on inspection results.',
+  },
+]
 
 export default function ProcessPage() {
   return (
     <main className="bg-[#303a4a] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Process', path: '/process' },
+          ]),
+          howToSchema({
+            name: 'EVS Process',
+            description:
+              'Learn how our AI-powered vision system works through a clear five-step process: capture, label, train, deploy, and action.',
+            path: '/process',
+            steps: processSteps,
+          }),
+        ]}
+      />
       {/* Hero Section */}
       <section className="px-6 py-8 md:px-8 lg:px-10">
         <div className="mx-auto max-w-[1680px] rounded-[6px] bg-[#313a46] px-6 py-8 md:px-10 md:py-10 lg:px-12 lg:py-12">

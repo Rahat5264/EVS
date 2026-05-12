@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import ContactFAQ from '@/components/edraak/ContactFAQ'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, collectionSchema, createPageMetadata, faqSchema } from '@/lib/seo'
 
 const caseStudies = [
   {
@@ -87,14 +89,37 @@ const faqItems = [
   },
 ]
 
-export const metadata = {
-  title: 'Case Studies - Edraak Systems | AI Vision Inspection Solutions',
-  description: 'Explore our successful case studies and implementation across various industries using AI-powered vision inspection.',
-}
+export const metadata = createPageMetadata({
+  title: 'Case Studies | Edraak Systems',
+  description:
+    'Explore successful EVS implementations across textile inspection, traceability, measurement, pharmaceutical, and color variation use cases.',
+  path: '/case-studies',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-07-at-12.21.51-PM-4.jpeg',
+})
 
 export default function CaseStudiesPage() {
   return (
     <main className="bg-[#303a4a] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Case Studies', path: '/case-studies' },
+          ]),
+          collectionSchema({
+            name: 'Case Studies',
+            description:
+              'Explore successful EVS implementations across textile inspection, traceability, measurement, pharmaceutical, and color variation use cases.',
+            path: '/case-studies',
+            items: caseStudies.map((study) => ({
+              name: study.title,
+              description: study.description,
+              image: study.image,
+            })),
+          }),
+          faqSchema(faqItems),
+        ]}
+      />
       {/* Hero Section */}
       <section className="px-6 py-8 md:px-8 lg:px-10">
         <div className="mx-auto max-w-[1680px]">

@@ -1,14 +1,34 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Pharma - EVS | AI Vision for Pharmaceutical Manufacturing',
+export const metadata = createPageMetadata({
+  title: 'Pharma | EVS AI Vision for Pharmaceutical Manufacturing',
   description:
-    'Production of specialized chemicals to support diverse industrial applications.',
-}
+    'Production-ready engineering and AI vision support for pharmaceutical manufacturing, cleanrooms, utilities, and regulated operations.',
+  path: '/industries/pharma',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb8bdd2b00cfaa6b8aef74_Pharma-Industries.png',
+})
 
 export default function PharmaPage() {
   return (
     <main className="bg-[#0f1416] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Pharma', path: '/industries/pharma' },
+          ]),
+          serviceSchema({
+            name: 'Pharma',
+            description:
+              'Production-ready engineering and AI vision support for pharmaceutical manufacturing, cleanrooms, utilities, and regulated operations.',
+            path: '/industries/pharma',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb8bdd2b00cfaa6b8aef74_Pharma-Industries.png',
+            areaServed: 'Pharmaceutical manufacturing',
+          }),
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-transparent">
         <video

@@ -1,14 +1,34 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Food - EVS | AI Vision for Food Processing',
+export const metadata = createPageMetadata({
+  title: 'Food | EVS AI Vision for Food Processing and Packaging',
   description:
-    'Hygienic and efficient systems to support food processing and production.',
-}
+    'Hygienic and efficient systems to support food processing and production with AI vision, inspection, and process control.',
+  path: '/industries/food',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cbd4459c6d03bf46187473_Food-Inspection.png',
+})
 
 export default function FoodPage() {
   return (
     <main className="bg-[#0f1416] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Food', path: '/industries/food' },
+          ]),
+          serviceSchema({
+            name: 'Food',
+            description:
+              'Hygienic and efficient systems to support food processing and production with AI vision, inspection, and process control.',
+            path: '/industries/food',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cbd4459c6d03bf46187473_Food-Inspection.png',
+            areaServed: 'Food processing and packaging',
+          }),
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-transparent">
         <video

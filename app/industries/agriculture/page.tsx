@@ -1,14 +1,34 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { breadcrumbSchema, createPageMetadata, serviceSchema } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Agriculture - EVS | AI Vision for Agriculture',
+export const metadata = createPageMetadata({
+  title: 'Agriculture | EVS AI Vision for Agriculture and Agro-Processing',
   description:
-    'Engineering solutions to support modern agricultural and agro-processing operations.',
-}
+    'Engineering solutions to support modern agricultural and agro-processing operations with AI vision, automation, and reliable production control.',
+  path: '/industries/agriculture',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb9965d175fb9f3f98ce04_Agricuture-Industry-.png',
+})
 
 export default function AgriculturePage() {
   return (
     <main className="bg-[#0f1416] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Agriculture', path: '/industries/agriculture' },
+          ]),
+          serviceSchema({
+            name: 'Agriculture',
+            description:
+              'Engineering solutions to support modern agricultural and agro-processing operations with AI vision, automation, and reliable production control.',
+            path: '/industries/agriculture',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb9965d175fb9f3f98ce04_Agricuture-Industry-.png',
+            areaServed: 'Agriculture and agro-processing',
+          }),
+        ]}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-transparent">
         <video

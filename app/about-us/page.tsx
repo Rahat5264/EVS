@@ -1,4 +1,14 @@
 import Image from 'next/image'
+import StructuredData from '@/components/seo/StructuredData'
+import { aboutPageSchema, breadcrumbSchema, createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'About Edraak Systems and EVS',
+  description:
+    'Learn about Edraak Systems and EVS, the AI fabric inspection platform built for textile quality control, automation, and traceability.',
+  path: '/about-us',
+  image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb7c782b53fed66d42be47_About-us-main-image.png',
+})
 
 const stats = [
   { value: '500+', label: 'Realized Solutions' },
@@ -51,6 +61,21 @@ const processCards = [
 export default function AboutUsPage() {
   return (
     <main className="bg-[#303a4a] text-white">
+      <StructuredData
+        data={[
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about-us' },
+          ]),
+          aboutPageSchema({
+            name: 'About Edraak Systems and EVS',
+            description:
+              'Learn about Edraak Systems and EVS, the AI fabric inspection platform built for textile quality control, automation, and traceability.',
+            path: '/about-us',
+            image: 'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb7c782b53fed66d42be47_About-us-main-image.png',
+          }),
+        ]}
+      />
       <section className="px-6 py-6 md:px-8 lg:px-10">
         <div className="mx-auto max-w-[1680px] rounded-[6px] bg-[#313a46] px-6 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10">
           <div className="flex min-h-[12vh] flex-col gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-10">

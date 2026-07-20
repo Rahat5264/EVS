@@ -14,7 +14,7 @@ export default function Navigation() {
       <div className="mx-auto flex max-w-[1220px] items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
         <Link href="/" className="inline-flex items-center">
           <Image
-            src="https://db.edraaksystems.com/wp-content/uploads/2026/05/69e76ba1c02a312bab552342_logo-evs.png"
+            src="https://db.edraaksystems.com/wp-content/uploads/2026/06/evs-logo.png"
             alt="EVS Logo"
             width={110}
             height={56}

@@ -7,7 +7,7 @@ export const siteConfig = {
   description:
     'AI-powered vision inspection systems for textiles and manufacturing, delivering real-time defect detection, traceability, and quality control.',
   logo:
-    'https://db.edraaksystems.com/wp-content/uploads/2026/05/69e76ba1c02a312bab552342_logo-evs.png',
+    'https://db.edraaksystems.com/wp-content/uploads/2026/06/evs-logo.png',
   defaultImage:
     'https://fqc.edraaksystems.com/wp-content/uploads/2026/05/69cb6ad06a94d0b9cd9bf5e7_Success-Story-image-Home-page-p-2000.jpeg',
   telephone: '+92 321 7973753',

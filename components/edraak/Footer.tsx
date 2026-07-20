@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="grid gap-10 border-b border-white/10 pb-12 md:grid-cols-2 xl:grid-cols-[1.2fr_0.8fr_0.9fr_1fr] xl:gap-8">
           <div>
             <Image
-              src="https://db.edraaksystems.com/wp-content/uploads/2026/05/69e769924cfa168d806ceef4_Untitled-design-3-1.png"
+              src="https://db.edraaksystems.com/wp-content/uploads/2026/06/evs-logo.png"
               alt="EVS Logo"
-              width={240}
-              height={240}
-              className="h-20 w-auto md:h-24 lg:h-28"
+              width={220}
+              height={112}
+              className="h-20 w-auto object-contain md:h-24 lg:h-28"
             />
             <p className="mt-10 max-w-[260px] text-[13px] leading-[1.45] text-white/72">
               EVS uses AI vision to deliver accurate inspections across industries. We bring quality and efficiency to every solution.

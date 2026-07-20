@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 const siteUrl = 'https://edraakvisionsystems.com'
 
 const logoUrl =
-  'https://db.edraaksystems.com/wp-content/uploads/2026/05/69e769924cfa168d806ceef4_Untitled-design-3-1.png'
+  'https://db.edraaksystems.com/wp-content/uploads/2026/06/evs-logo.png'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
